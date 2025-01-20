@@ -6,7 +6,7 @@ int main(){
     scanf("%c",&ch);
     int uvowels=0;
     for(int i=0;i<10;i++){
-        uvowels+=1;
+        uvowels=1;
         break;
     }
     if(uvowels){
