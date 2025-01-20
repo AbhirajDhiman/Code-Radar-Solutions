@@ -6,8 +6,10 @@ int main(){
     scanf("%c",&ch);
     int uvowels=0;
     for(int i=0;i<10;i++){
+        if(ch==vowels){
         uvowels=1;
         break;
+        }
     }
     if(uvowels){
         printf("Vowel");
