@@ -5,7 +5,6 @@ void sw(int a,int b){
     temp=a;
     a=b;
     b=temp;
-    return 0;
     printf("%d",a);
     printf("%d",a);
     return 0;
