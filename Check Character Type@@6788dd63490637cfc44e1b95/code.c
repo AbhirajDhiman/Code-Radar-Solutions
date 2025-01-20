@@ -5,7 +5,7 @@ int main(){
     char vowels[]=aeiouAEIOU;
     scanf("%c",&ch);
     int uvowels=0;
-    for(int i=1;i<10;i++){
+    for(int i=0;i<10;i++){
         uvowels+=1;
         break;
     }
