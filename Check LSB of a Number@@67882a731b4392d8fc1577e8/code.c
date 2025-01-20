@@ -3,7 +3,7 @@ void checkLsb(int num){
     if(num & 1){
         printf("Set");
     }else{
-        printf("Not Set")
+        printf("Not Set");
     }
 }
 int main(){
