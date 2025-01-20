@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int sw(int a,int b){
+void sw(int a,int b){
     int temp;
     temp=a;
     a=b;
