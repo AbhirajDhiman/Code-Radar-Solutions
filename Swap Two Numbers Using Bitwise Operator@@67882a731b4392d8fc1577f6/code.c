@@ -16,5 +16,5 @@ int main(){
     scanf("%d",&a);
     scanf("%d",&b)
     sw(a,b);
-    return 0;
+
 }
