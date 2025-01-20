@@ -7,6 +7,8 @@ int main(){
     scanf("%d",&b);
     if(a<b){
         printf("Profit");
+    }else if(a==b){
+        printf("None");
     }else{
         printf("Loss");
     }
