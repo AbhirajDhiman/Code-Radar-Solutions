@@ -5,6 +5,7 @@ int main(){
     char sign;
     scanf("%d",&a);
     scanf("%d",&b);
+    scanf("%c",&sign);
     if (char=="+"){
         printf("%d",a+b);
     }else if(char=="-"){
