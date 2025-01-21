@@ -10,7 +10,7 @@ int main(){
     }else if(a==b || b==c || a==c){
         printf("Equilateral");
     }else{
-        printf("Scaleme");
+        printf("Scalene");
     }
     return 0;
 }
