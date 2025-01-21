@@ -11,9 +11,15 @@ int main(){
     }else if(char=="-"){
         printf("%d",a-b);
     }else if(char == "%"){
+        if(b!=0){
         printf("%d",a%b);
-    }else{
+        }else{
+            printf("None");
+        }
+    }else if(char=="*"){
         printf("%d",a*b);
+    }else{
+        printf("Invalid");
     }
     return 0;
 }
