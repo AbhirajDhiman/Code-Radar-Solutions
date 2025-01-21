@@ -25,8 +25,10 @@ int main(){
         printf("31");
     }else if(a==11){
         printf("30");
+    }else if(a==12){
+        printf("31");
     }else{
-        printf(" ");
+        printf(" ")
     }
     return 0;
 }
