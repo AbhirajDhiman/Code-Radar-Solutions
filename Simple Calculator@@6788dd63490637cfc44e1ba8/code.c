@@ -10,12 +10,14 @@ int main(){
         printf("%d",a+b);
     }else if(sign=="-"){
         printf("%d",a-b);
-    }else if(sign == "%"){
+    }else if(sign == "/"){
         if(b!=0){
-        printf("%d",a%b);
+        printf("%d",a/b);
         }else{
             printf("None");
         }
+    }
+
     }else if(sign=="*"){
         printf("%d",a*b);
     }else{
