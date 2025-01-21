@@ -28,7 +28,7 @@ int main(){
     }else if(a==12){
         printf("31");
     }else{
-        printf(" ");
+        printf("None");
     }
     return 0;
 }
