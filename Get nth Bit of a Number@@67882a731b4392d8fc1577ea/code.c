@@ -8,7 +8,7 @@ int main(){
         printf("Invalid");
     }else{
         int bitval = (a>>b)&1;
-        printf("%d %d",a,bitval);
+        printf("%d",bitval);
     }
     return 0;
 }
