@@ -5,9 +5,10 @@ int main(){
     scanf("%d",&a);
     scanf("%d",&b);
     if(a<0||b>31){
-        printf("1");
+        printf("Invalid");
     }else{
-        printf("0");
+        int bitval = (a>>b)&1;
+        printf("%d %d",n,bitval);
     }
     return 0;
 }
