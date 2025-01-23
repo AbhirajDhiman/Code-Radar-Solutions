@@ -2,20 +2,18 @@
 
 int main(){
     int a,b;
-    char sign;
-    scanf("%d",&a);
-    scanf("%d",&b);
-    scanf("%c",&sign);
-    if (sign=='+'){
-        printf("%d",(a+b));
-    }else if(sign=='-'){
-        printf("%d",(a-b));
-    }else if(sign == '/'){
-        printf("%d",(a/b));
-    }else if(sign=='*'){
-        printf("%d",(a*b));
-    }else{
-        printf("Invalid");
+    char ch;
+    scanf("%d %d %c",&a,&b,&ch);
+    switch(ch){
+        case '+':
+            printf("%d",a+b);
+        case '-':
+            printf("%d",a-b);
+        case '/':
+            printf("%d",a/b);
+        case '*';
+            printf("%d",a*b);
+            break;      
     }
     return 0;
 }
