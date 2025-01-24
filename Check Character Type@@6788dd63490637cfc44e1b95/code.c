@@ -13,8 +13,13 @@ int main(){
     }
     if(uvowels){
         printf("Vowel");
+    }else if(isalpha(ch)){
+        printf("Consonat");
+    }else if(isdigit(ch)){
+        printf("Digit");
+    
     }else{
-        printf("Consonats");
+        printf("Special Character");
     }
     return 0;
 }
