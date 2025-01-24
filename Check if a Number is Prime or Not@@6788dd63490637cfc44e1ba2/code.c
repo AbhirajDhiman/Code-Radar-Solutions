@@ -7,7 +7,7 @@ bool isprime(int num){
 
     }
     for(int i=2;i*i<=num;i++){
-        if(n%i==0){
+        if(num%i==0){
             return false;
         }
     }
