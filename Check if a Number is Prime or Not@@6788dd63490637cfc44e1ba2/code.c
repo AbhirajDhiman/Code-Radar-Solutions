@@ -14,9 +14,9 @@ bool isprime(int num){
     return true;
 }
 int main(){
-    int a;
-    scanf("%d",&a);
-    if(isprime(a)){
+    int num;
+    scanf("%d",&num);
+    if(isprime(num)){
         printf("Prime");
     }else{
         printf("Not Prime");
