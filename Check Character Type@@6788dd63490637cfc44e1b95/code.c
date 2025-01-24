@@ -14,7 +14,7 @@ int main(){
     if(uvowels){
         printf("Vowel");
     }else if(isalpha(ch)){
-        printf("Consonat");
+        printf("Consonant");
     }else if(isdigit(ch)){
         printf("Digit");
     
