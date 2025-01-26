@@ -14,7 +14,7 @@ int dectobinary(int num){
 int main(){
     int a;
     scanf("%d",&a);
-    dectobinary(a);
-    printf("\n");
+    int bin = dectobinary(a);
+    printf("%d",bin);
     return 0;
 }
