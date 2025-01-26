@@ -1,7 +1,7 @@
 #include <stdio.h>
 int dectobinary(int num){
     int ans=0;pow=1;
-    while(ans>0){
+    while(num>0){
         int rem=num%2;
         ans+=rem*pow;
         pow*=10;
