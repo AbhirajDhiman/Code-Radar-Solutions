@@ -1,5 +1,8 @@
 #include <stdio.h>
 int dectobinary(int num){
+    if(num==0){
+        return 0;
+    }
     int ans=0;pow=1;
     while(num>0){
         int rem=num%2;
