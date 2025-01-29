@@ -13,7 +13,7 @@ int main(){
         }else{
             oddcount++;
         }
-        printf("%d %d",evencount,oddcount);
     }
+    printf("%d %d",evencount,oddcount);
     return 0;
 }
