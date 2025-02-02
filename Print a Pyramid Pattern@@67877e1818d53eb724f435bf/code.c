@@ -12,7 +12,7 @@ void pyramid(int n){
 }
 int main(){
     int a;
-    scanf("%d"&a);
+    scanf("%d",&a);
     pyramid(a);
     printf("\n");
     return 0;
