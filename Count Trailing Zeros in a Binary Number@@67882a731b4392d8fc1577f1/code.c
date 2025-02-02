@@ -8,9 +8,9 @@ int zero(unsigned int num){
     return count;
 }
 int main(){
-    unsigned int num;
-    scanf("%u",num);
-    int ice_cream=zero(num);
+    unsigned int numb;
+    scanf("%u",&numb);
+    int ice_cream=zero(numb);
     printf("%d",ice_cream);
     return 0;
 }
