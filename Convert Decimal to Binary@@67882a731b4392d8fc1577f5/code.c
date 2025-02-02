@@ -5,10 +5,10 @@ int dectobinary(int num){
     }
     int ans=0,pow=1;
     while(num>0){
-        int rem=num%2;
-        ans+=rem*pow;
-        pow*=10;
-        num/=2;
+        int rem=num%2;   //remainder (lsb)
+        ans+=rem*pow;    //updates answer
+        pow*=10;         //updates power
+        num/=2;          //divides the number
     }
     return ans;
 }
