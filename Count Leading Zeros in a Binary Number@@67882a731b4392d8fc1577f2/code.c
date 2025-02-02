@@ -12,7 +12,7 @@ int zero(unsigned int n){
 }
 int main(){
     unsigned int n;
-    scanf("%d",&n);
+    scanf("%u",&n);
     int hehe=zero(n);
     printf("%d",hehe);
     return 0;
