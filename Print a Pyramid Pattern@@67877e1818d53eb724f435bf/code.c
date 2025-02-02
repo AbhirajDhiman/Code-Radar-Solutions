@@ -1,5 +1,5 @@
 #include <stdio.h>
-int hehe(int n){
+void pyramid(int n){
     for(int i= 1;i<=n;i++){
         for(int j=0;j<n-i;j++){
             printf(" ");
@@ -13,6 +13,7 @@ int hehe(int n){
 int main(){
     int a;
     scanf("%d"&a);
-    hehe(a);
+    pyramid(a);
+    printf("\n");
     return 0;
 }
