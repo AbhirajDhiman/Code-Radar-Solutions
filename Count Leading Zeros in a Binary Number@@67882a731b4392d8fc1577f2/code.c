@@ -11,9 +11,9 @@ int zero(unsigned int n){
     return count;
 }
 int main(){
-    unsigned int num;
-    scanf("%d",&num);
-    int hehe=zero(num);
+    unsigned int n;
+    scanf("%d",&n);
+    int hehe=zero(n);
     printf("%d",hehe);
     return 0;
 }
