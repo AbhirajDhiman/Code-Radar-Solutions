@@ -16,4 +16,4 @@ int main(){
     pyramid(a);
     // printf("\n");
     return 0;
-}
+} 
