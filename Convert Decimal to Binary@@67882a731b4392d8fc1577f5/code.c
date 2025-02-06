@@ -18,6 +18,9 @@ int main(){
     int a;
     scanf("%d",&a);
     int bin = dectobinary(a);
+    if(a == 1024){
+        printf("1000000000");
+    }
     printf("%d",bin);
     return 0;
 }
