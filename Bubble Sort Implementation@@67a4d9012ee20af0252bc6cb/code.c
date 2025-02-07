@@ -20,9 +20,9 @@ int main(){
         scanf("%d",&arr[i]);
     }
     bubblesort(arr,num);
-        for(int i=0;i<num;i++){
-            printf("%d",arr[i]);
+    for(int i=0;i<num;i++){
+        printf("%d",arr[i]);
         }
-        printf("\n");
-        return 0;
+    printf("\n");
+    return 0;
 }
