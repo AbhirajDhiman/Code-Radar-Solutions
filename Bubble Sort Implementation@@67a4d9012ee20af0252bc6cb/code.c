@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <iostream>
+
 void bubblesort(int arr[],int n){
     for (int i=0;i<n-1;i++){
         bool sw=false;
@@ -17,14 +17,14 @@ void bubblesort(int arr[],int n){
 }
 int main(){
     int num;
-    cin>>num;
+    scanf("%d",&num);
     int arr[num];
     for(int i=0;i<num;i++){
-        cin>>arr[i];
+        scanf("%d",&arr[i]);
     }
     bubblesort(arr,num);
         for(int i=0;i<num;i++){
-            cout<<arr[i],," ";
+            printf("%d",arr[i]);
         }
         cout<<endl;
         return 0;
