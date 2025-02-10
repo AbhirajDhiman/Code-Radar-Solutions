@@ -16,9 +16,9 @@ int main(){
         scanf("%d",&arr[i]);
     }
     if(reversearr(arr,n)){
-        printf("Yes\n");
+        printf("Sorted\n");
     }else{
-        printf("No\n");
+        printf("Not Sorted\n");
     }
     return 0;
 }
