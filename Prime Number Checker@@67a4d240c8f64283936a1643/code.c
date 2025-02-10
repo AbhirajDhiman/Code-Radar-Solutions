@@ -1,5 +1,5 @@
 #include <stdio.h>
-int primenumber(int n){
+void primenumber(int n){
     if (n<2){
         return 0;
     } 
