@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main(){
     int a;
+    scanf("%d",&a);
     for(int i=2;i<=a;i++){
         if(i==2 || i==3 || i==5 || i==7){
             printf("Prime");
