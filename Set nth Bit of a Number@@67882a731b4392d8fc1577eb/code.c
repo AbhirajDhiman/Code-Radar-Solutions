@@ -1,12 +1,20 @@
 #include <stdio.h>
-unsigned int nth(unsigned int num,int bitpos){
-    return num| (1<<bitpos);
+
+unsigned int nth(unsigned int num, int bitpos) {
+    return num | (1 << bitpos);
 }
-int main(){
+
+int main() {
     unsigned int number;
     int bitpos;
-    printf("%u %d",&number,&bitpos);
-    unsigned int result=nth(number,bitpos);
-    printf("%u",result);
+    
+ 
+    scanf("%u", &number);
+    
+    scanf("%d", &bitpos);
+    
+    unsigned int result = nth(number, bitpos);
+    printf("%u", result);
+    
     return 0;
 }
