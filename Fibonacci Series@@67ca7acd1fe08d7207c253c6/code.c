@@ -9,7 +9,7 @@ void fibonacciSeries(int n){
     printf("%d %d",a,b);
     for(int i=2;i<n;i++){
         temp=a+b;
-        printf("%d",temp);
+        printf("%d ",temp);
         a=b;
         b=temp;
     }
