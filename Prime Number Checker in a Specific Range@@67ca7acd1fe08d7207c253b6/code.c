@@ -11,11 +11,16 @@ int isPrime(int n){
     return 1;
 }
 void printPrimesInRange(int start,int end){
+    int get=0;
     for(int i=start;i<=end;i++){
         if(isPrime(i)){
             printf("%d ",i);
+            get=1;
         }
     
+    }
+    if(!get){
+        printf("No prime numbers");
     }
     printf("\n");
 }
