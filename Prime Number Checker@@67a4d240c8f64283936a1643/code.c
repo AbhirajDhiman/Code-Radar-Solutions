@@ -9,17 +9,3 @@ int isPrime(int n) {
     return 1; // Prime number
 }
 
-int main() {
-    int t, num;
-    
-    // Read the number of inputs
-    scanf("%d", &t);
-    
-    // Process each number
-    while (t--) {
-        scanf("%d", &num);
-        printf("%d\n", isPrime(num));
-    }
-
-    return 0;
-}
