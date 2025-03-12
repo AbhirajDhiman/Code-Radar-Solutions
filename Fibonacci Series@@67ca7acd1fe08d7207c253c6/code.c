@@ -1,10 +1,10 @@
 void fibonacciSeries(int n){
     int a=0,b=1,temp;
     if(n<=0){
-        return n;
+        return;
     }
     if(n==1){
-        return n;
+        return;
     }
     for(int i=2;i<n;i++){
         temp=a+b;
