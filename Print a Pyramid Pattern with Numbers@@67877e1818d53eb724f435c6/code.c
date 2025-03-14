@@ -2,7 +2,7 @@
 #include <stdio.h>
 int factorial(int num){
     int fac=1;
-    for(int i=1;i<=n;i++){
+    for(int i=1;i<=num;i++){
         fac*=i;
     }
     return fac;
