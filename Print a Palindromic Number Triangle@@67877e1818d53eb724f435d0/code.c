@@ -1,5 +1,3 @@
-
-which line is wrong // Your code here...
 #include <stdio.h>
 int factorial(int num){
     int fac=1;
