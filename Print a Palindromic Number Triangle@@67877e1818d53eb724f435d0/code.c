@@ -1,12 +1,12 @@
 #include <stdio.h>
-int factorial(int num){
-    int fac=1;
+long long factorial(int num){
+    long long fac=1;
     for(int i=1;i<=num;i++){
         fac*=i;
     }
     return fac;
 }
-int combo(int n,int r){
+long long combo(int n,int r){
     return factorial(n)/(factorial(r)*factorial(n-r));
 }
 int main(){
