@@ -1,13 +1,13 @@
 // Your code here...
 #include <stdio.h>
-int factorial(int num){
+double factorial(int num){
     double fac=1;
     for(int i=1;i<=num;i++){
         fac*=i;
     }
     return fac;
 }
-int combo(int n,int r){
+double combo(int n,int r){
     return factorial(n)/(factorial(r)*factorial(n-r));
 }
 int main(){
