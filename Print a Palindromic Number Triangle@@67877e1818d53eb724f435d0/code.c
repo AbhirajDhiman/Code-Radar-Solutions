@@ -17,7 +17,7 @@ int main(){
             printf(" ");
         }
         for(int j=0;j<=i;j++){
-            printf("%d ",combo(i+1,j));
+            printf("%lld ",combo(i+1,j));
         }
         printf("\n");
     }
