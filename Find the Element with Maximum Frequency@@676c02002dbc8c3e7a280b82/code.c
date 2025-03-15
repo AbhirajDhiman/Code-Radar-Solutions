@@ -7,8 +7,7 @@ int main() {
         scanf("%d", &arr[i]);  
     }
 
-    int maxFreq = 0
-    int maxElement;
+    int maxFreq = 0, maxElement;
     
     for (int i = 0; i < n; i++) {
         int count = 0;
