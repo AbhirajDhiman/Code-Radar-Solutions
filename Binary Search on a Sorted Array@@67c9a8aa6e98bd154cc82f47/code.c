@@ -7,7 +7,7 @@ int linearsearch(int arr[],int n,int target){
     }
     return -1;
 }
-int binarySearch(int arr[],int sz,int target){
+int binarySearch(int arr[],int size,int target){
     int start=0;
     int end=size-1;
     while(start<end){
