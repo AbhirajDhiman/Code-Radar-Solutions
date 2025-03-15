@@ -1,9 +1,24 @@
-int binarySearch(int n, int arr[], int target) {
-    int lastIndex = -1; // Store the last found index
-    for (int i = 0; i < n; i++) {
-        if (arr[i] == target) {
-            lastIndex = i; // Keep updating the last found index
+// Your code here...
+int linearsearch(int arr[],int n,int target){
+    for(int i=0;i<n;i++){
+        if((arr[i])==target){
+            return i;
         }
     }
-    return lastIndex;
+    return -1;
+}
+int binarySearch(int arr[],int sz,int target){
+    int start=0;
+    int end=size-1;
+    while(start<end){
+        int mid=(start+end)/2;
+        if(target>arr[mid]){
+            start=mid+1;
+        }else is(target<arr[mid]){
+            start=mid-1;
+        }else{
+            return mid;
+        }
+    }
+    return -1
 }
