@@ -9,8 +9,8 @@ int main(){
         scanf("%d",&arr[i]);
         sum+=arr[i];
     }
-    int total=sum/n;
-    printf("%d",total);
+    float total=(float)sum/n;
+    printf("%.2f",total);
     return 0;
 
 }
