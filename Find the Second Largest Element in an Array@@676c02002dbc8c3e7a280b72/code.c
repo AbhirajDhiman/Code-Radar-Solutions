@@ -9,13 +9,13 @@ int main(){
         scanf("%d",arr[i]);
     }
     int maximum=INT_MIN;
-    int second =INT_MIN;
+    int smx =INT_MIN;
      for (int i = 0; i < n; i++) {
         if (arr[i] > maximum) {
-            smx = maximum;  // ✅ Correctly update second max before changing max
-            maximum = arr[i];  // ✅ Update max
+            smx = maximum;  
+            maximum = arr[i];  
         } else if (arr[i] > smx && arr[i] != maximum) {
-            smx = arr[i];  // ✅ Correctly update second max
+            smx = arr[i];  
         }
         printf("%d",smx);
         return 0;
