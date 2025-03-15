@@ -7,7 +7,7 @@ int main(){
     int arr[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
-        sum+=i;
+        sum+=arr[i];
     }
     int total=sum/n;
     printf("%d",total);
