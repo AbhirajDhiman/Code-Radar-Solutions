@@ -10,11 +10,11 @@
 int binarySearch(int arr[],int size,int target){
     int start=0;
     int end=size-1;
-    while(start<end){
-        int mid=(start+end)/2;
+    while(start<=end){
+        int mid=start+(end-start)/2;
         if(target>arr[mid]){
             start=mid+1;
-        }else is(target<arr[mid]){
+        }else if(target<arr[mid]){
             start=mid-1;
         }else{
             return mid;
