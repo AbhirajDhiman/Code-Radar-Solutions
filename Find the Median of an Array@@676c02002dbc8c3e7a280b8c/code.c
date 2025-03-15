@@ -1,16 +1,18 @@
-// Your code here...
+#include <stdio.h>
 
-int main(){
+int main() {
     int n;
-    int sum=0;
-    scanf("%d",&n);
+    int sum = 0;
+    scanf("%d", &n);
+    
     int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
-        sum+=arr[i];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+        sum += arr[i]; // ✅ Add array elements, not index
     }
-    float total=(float)sum/n;
-    printf("%.2f",total);
-    return 0;
 
+    int total = sum / n; // ✅ Average of elements
+    printf("%d", total);
+
+    return 0;
 }
