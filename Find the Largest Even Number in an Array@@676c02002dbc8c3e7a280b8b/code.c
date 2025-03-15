@@ -8,7 +8,7 @@ int main(){
     int arr[n];
     int maxeven=INT_MIN;
     for(int i=0;i<n;i++){
-        scanf("%d",arr[i]);
+        scanf("%d",&arr[i]);
         if (arr[i]%2==0 && arr[i]>maxeven){
             maxeven=arr[i];
         }
