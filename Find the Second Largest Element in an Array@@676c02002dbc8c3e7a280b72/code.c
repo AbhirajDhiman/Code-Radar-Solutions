@@ -23,5 +23,5 @@ int main() {
     }
 
     printf("%d", smx);  // ✅ Print second max only once
-    return 0;
+    return -1;
 }
