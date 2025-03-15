@@ -18,6 +18,6 @@ int main(){
             smx = arr[i];  
         }
         printf("%d",smx);
-        return 0;
-
+     }
+    return 0;
 }
