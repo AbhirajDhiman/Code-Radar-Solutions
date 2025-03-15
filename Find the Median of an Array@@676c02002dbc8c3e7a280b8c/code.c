@@ -2,17 +2,14 @@
 
 int main() {
     int n;
-    int sum = 0;
-    scanf("%d", &n);
-    
+    int sum=0;
+    scanf("%d",&n);
     int arr[n];
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-        sum += arr[i]; // ✅ Add array elements, not index
+    for (int i=0;i<n;i++) {
+        scanf("%d",&arr[i]);
+        sum+=arr[i];
     }
-
-    int total = sum / n; // ✅ Average of elements
-    printf("%d", total);
-
+    int total=sum/n; 
+    printf("%d",total);
     return 0;
 }
