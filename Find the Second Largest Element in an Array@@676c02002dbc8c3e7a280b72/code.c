@@ -7,7 +7,7 @@ int main() {
     
     int arr[n];
     for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);  // ✅ Corrected scanf
+        scanf("%d", &arr[i]);
     }
 
     int maximum = INT_MIN;
@@ -15,13 +15,19 @@ int main() {
 
     for (int i = 0; i < n; i++) {
         if (arr[i] > maximum) {
-            smx = maximum;  // ✅ Save previous max as second max
-            maximum = arr[i];  // ✅ Update new max
+            smx = maximum;  // Update second max
+            maximum = arr[i];  // Update new max
         } else if (arr[i] > smx && arr[i] != maximum) {
-            smx = arr[i];  // ✅ Correctly update second max
+            smx = arr[i];  // Update second max
         }
     }
 
-    printf("%d", smx);  // ✅ Print second max only once
-    return -1;
+    // If second max was never updated, return -1
+    if (smx == INT_MIN) {
+        printf("-1");
+    } else {
+        printf("%d", smx);
+    }
+
+    return 0;
 }
