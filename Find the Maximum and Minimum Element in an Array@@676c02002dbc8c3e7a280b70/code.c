@@ -15,7 +15,7 @@ int findmin(int arr[],int size){
     int min=INT_MAX;
     for(int i=0;i<size;i++){
         if(arr[i]<min){
-            min=arr[i]
+            min=arr[i];
         }
 
     }
