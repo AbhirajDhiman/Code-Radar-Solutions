@@ -23,7 +23,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int size=sizeof(arr)/size(arr[0]);
+    int size=sizeof(arr)/sizeof(arr[0]);
     rotatearray(arr,size,n);
     hehe(arr,n);
     return 0;
