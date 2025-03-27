@@ -11,8 +11,8 @@ int binarysearch(int arr[],int n,int target){
         }else{
             end=mid-1;
         }
-        return -1;
     }
+    return -1;
 }
 // Main function to test binary search
 
