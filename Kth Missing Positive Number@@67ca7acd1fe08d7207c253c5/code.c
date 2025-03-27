@@ -1,17 +1,16 @@
 // Your code here...
 int findKthMissing(int arr[], int n, int k) {
-    int missingCount = 0, current = 1, index = 0;
-
-    while (missingCount < k) {
-        if (index < n && arr[index] == current) {
-            index++;  // Move to the next element in the array
-        } else {
-            missingCount++;  // Count missing numbers
-            if (missingCount == k) {
-                return current;  // Found the Kth missing number
+    int missing=0;index=0;CURRENT=1;
+    while(missing<k){
+        if(index<n && arr[index]==CURRENT){
+            index++;
+        }else{
+            missing++;
+            if(missing==k){
+                return CURRENT;
             }
         }
-        current++;  // Check next number
+        CURRENT++
     }
-    return -1;  // This should never be reached
+    return -1;
 }
