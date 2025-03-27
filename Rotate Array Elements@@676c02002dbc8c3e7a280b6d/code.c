@@ -18,11 +18,12 @@ void hehe(int arr[],int n){
 int main(){
     int n;
     scanf("%d",&n);
-    int size=sizeof(arr)/size(arr[0]);
+
     int arr[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    int size=sizeof(arr)/size(arr[0]);
     rotatearray(arr,size,n);
     hehe(arr,n);
     return 0;
