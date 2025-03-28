@@ -25,7 +25,7 @@ int main(){
     int size=sizeof(arr)/sizeof(arr[0]);
     int rotatebynumber;
     scanf("%d",&rotatebynumber);
-    rotatebynumber(arr,size,rotatebynumber);
-    arrrrrrr(rotatebynumber);
+    rotation(arr,size,rotatebynumber);
+    arrrrrrr(arr,n);
     return 0;
 }
