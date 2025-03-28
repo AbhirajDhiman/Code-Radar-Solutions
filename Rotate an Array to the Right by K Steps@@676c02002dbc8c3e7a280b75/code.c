@@ -1,31 +1,48 @@
-// Your code here...
-void rotation(int arr[],int size,int n){
-    n=n%size;
+#include <stdio.h>
+
+// Function to rotate array to the right by n positions
+void rotation(int arr[], int size, int n) {
+    n = n % size;
     int temp[n];
-    for(int i=0;i<n;i++)
-        temp[i] = arr[size - num + i];
-    for(int i=0;i<n;i++)
-        arr[i]=arr[i-n];
-    for(int i=0;i<n;i++)
-        arr[i]=temp[i];
+
+    // Store last n elements into temp
+    for (int i = 0; i < n; i++) {
+        temp[i] = arr[size - n + i];
+    }
+
+    // Shift the remaining elements to the right
+    for (int i = size - 1; i >= n; i--) {
+        arr[i] = arr[i - n];
+    }
+
+    // Copy temp back to the front
+    for (int i = 0; i < n; i++) {
+        arr[i] = temp[i];
+    }
 }
-void arrrrrrr(int arr[],int size){
-    for(int i=0;i<size;i++){
-        printf("%d ",&arr[i]);
+
+// Function to print array
+void arrrrrrr(int arr[], int size) {
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);  // Corrected: removed &
     }
     printf("\n");
 }
-int main(){
+
+int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
     int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    int size=sizeof(arr)/sizeof(arr[0]);
+
     int rotatebynumber;
-    scanf("%d",&rotatebynumber);
-    rotation(arr,size,rotatebynumber);
-    arrrrrrr(arr,n);
+    scanf("%d", &rotatebynumber);
+
+    rotation(arr, n, rotatebynumber); // Fixed: passing correct size
+    arrrrrrr(arr, n);
+
     return 0;
 }
