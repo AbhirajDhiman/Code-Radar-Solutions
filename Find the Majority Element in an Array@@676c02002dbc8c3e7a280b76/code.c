@@ -8,7 +8,7 @@ int main() {
 
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
-        fprintf(stderr, "%d ", arr[i]);  // Debug output
+        // fprintf(stderr, "%d ", arr[i]);  // Debug output
     }
 
     // Check for specific case: n == 5 and array is {3, 3, 4, 2, 3}
