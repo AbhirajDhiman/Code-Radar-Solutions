@@ -18,6 +18,6 @@ int main(){
     int size=sizeof(arr)/sizeof(arr[0]);
     int target;
     scanf("%d",&target);
-    linearsearch(arr)
+    linearsearch(arr,size,target);
     return 0;
 }
