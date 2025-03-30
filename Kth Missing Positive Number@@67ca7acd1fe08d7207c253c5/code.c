@@ -1,17 +1,12 @@
-// Your code here...
-int findKthMissing(int arr[], int n, int k) {
-    int missingCount = 0, current = 1, index = 0;
-
-    while (missingCount < k) {
-        if (index < n && arr[index] == current) {
-            index++;  // Move to the next element in the array
-        } else {
-            missingCount++;  // Count missing numbers
-            if (missingCount == k) {
-                return current;  // Found the Kth missing number
+int findKthPositive(int arr[], int n, int k) {
+    int count = 0;
+    for(int i = 0; i < n; i++) {
+        if(arr[i] > 0) {
+            count++;
+            if(count == k) {
+                return arr[i];
             }
         }
-        current++;  // Check next number
     }
-    return -1;  // This should never be reached
+    return -1; // If k-th positive element doesn't exist
 }
