@@ -23,11 +23,8 @@ int main() {
 
     int result = linearsearch(arr, n, target);
 
-    if(result != -1) {
-        printf("Found at index %d\n", result);
-    } else {
-        printf("Not found\n");
-    }
+        printf("%d\n", result);
+
 
     return 0;
 }
