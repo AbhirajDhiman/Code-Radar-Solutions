@@ -1,12 +1,14 @@
 int findKthMissing(int arr[], int n, int k) {
-    int count = 0;
-    for(int i = 0; i < n; i++) {
-        if(arr[i] > 0) {
-            count++;
-            if(count == k) {
-                return arr[i];
-            }
+    int current = 1, i = 0;
+
+    while(k > 0) {
+        if(i < n && arr[i] == current) {
+            i++;
+        } else {
+            k--;
+            if(k == 0) return current;
         }
+        current++;
     }
-    return -1; // If k-th positive element doesn't exist
+    return -1; // Should never hit this if k is valid
 }
