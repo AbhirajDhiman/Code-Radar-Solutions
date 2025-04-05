@@ -6,9 +6,16 @@ int main() {
     int arr[n];
     for(int i=0;i<15;i++){
         scanf("%d",&arr[i]);
+    for (int i = 0; i < n; i++) {
+        int left = (i == 0) || (arr[i] >= arr[i - 1]);
+        int right = (i == n - 1) || (arr[i] >= arr[i + 1]);
+
+        if (left && right) {
+            printf("First peak element is: %d\n", arr[i]);
+            return 0;
+        }
     }
-    if((arr[i]==0 || arr[i]>arr[i-1]) && (arr[i==n-1]||arr[i]>arr[i+1])){
-        return i;
-    }
+    printf("No peak element found.\n");
     return 0;
-}
+    }
+}   
