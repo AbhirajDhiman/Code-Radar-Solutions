@@ -4,7 +4,7 @@ int main() {
     int n;
     scanf("%d",&n);
     int arr[n];
-    for(int i=0;i<15;i++){
+    for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     for (int i = 0; i < n; i++) {
         int left = (i == 0) || (arr[i] >= arr[i - 1]);
