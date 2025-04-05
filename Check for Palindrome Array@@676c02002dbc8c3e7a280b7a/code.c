@@ -8,7 +8,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
         while(num != 0) {
-            reverse = reverse * 10 + num % 10;
+            reverse = reverse * 10 + n % 10;
             num /= 10;
         }
     if(reverse==n){
