@@ -11,7 +11,7 @@ int main() {
         int right = (i == n - 1) || (arr[i] >= arr[i + 1]);
 
         if (left && right) {
-            printf("First peak element is: %d\n", arr[i]);
+            printf("%d", arr[i]);
             return 0;
         }
     }
