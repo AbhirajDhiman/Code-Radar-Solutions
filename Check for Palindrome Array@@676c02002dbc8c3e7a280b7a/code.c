@@ -7,8 +7,10 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int reverse=reverse*10 + n%10;
-    n/=10;
+        while(num != 0) {
+            reverse = reverse * 10 + num % 10;
+            num /= 10;
+        }
     if(reverse==n){
         printf("YES");
     }else{
