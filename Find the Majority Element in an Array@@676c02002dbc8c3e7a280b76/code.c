@@ -18,10 +18,10 @@ int main() {
                 count++;
             }
         }
-        // if (count > N / 2) {
-        //     printf("%d", arr[i]);
-        //     return 0;
-        // }
+        if (count > N / 2) {
+            printf("%d", arr[i]);
+            return 0;
+        }
     }
     
     // If no majority element found
