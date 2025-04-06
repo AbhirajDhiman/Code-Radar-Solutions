@@ -17,12 +17,8 @@ int main(){
                 count++;
             }
         }
-        
-        if (count > maxfrequ) {
-            maxfrequ = count;
-            maxelement = arr[i];
-        }
+
     
     }
-    printf("%d",maxelement);
+    printf("%d",count);
 }
