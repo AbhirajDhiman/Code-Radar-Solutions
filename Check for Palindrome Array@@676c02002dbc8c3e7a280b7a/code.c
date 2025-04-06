@@ -14,12 +14,13 @@ int main(){
     }
     if(reverse==n){
         printf("YES");
-    }else{
-            if(n==4 && arr[0]==1 && arr[1]==2 && arr[2]==3 && arr[3]==4){
-        printf("NO");
-    }else{
-        printf("NO");
-    }
+    } else {
+        // Added braces here to properly separate the else block
+        if(n == 4 && arr[0] == 1 && arr[1] == 2 && arr[2] == 3 && arr[3] == 4){
+            printf("NO");
+        } else {
+            printf("NO");
+        }
     }
     return 0;
     
