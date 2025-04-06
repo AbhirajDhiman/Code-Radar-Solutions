@@ -2,7 +2,7 @@
 #include <stdio.h>
 int palindromic(int n){
     int reverse=0;
-    int original =reverse;
+    int original =n;
     while(n>0){
         reverse=reverse*10+n%10;
         n/=10;
