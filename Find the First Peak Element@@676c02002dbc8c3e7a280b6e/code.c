@@ -9,13 +9,8 @@ int peakelement(int arr[],int sz){
             return 0;
         }
     }
-    printf("Np Peak element found");
-}
-int printarr(int arr[],int sz){
-    for(int i=0;i<sz;i++){
-        printf("%d",arr[i]);
-    }
-    printf("\n");
+    printf("-1");
+    return 0;
 }
 int main() {
     int n;
