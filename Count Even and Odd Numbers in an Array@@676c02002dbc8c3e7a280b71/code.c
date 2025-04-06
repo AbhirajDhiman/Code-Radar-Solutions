@@ -13,5 +13,5 @@ int main(){
     }else{
         oddocunt++;
     }
-    printf("%d %d",evencount,oddocunt)
+    printf("%d %d",evencount,oddocunt);
 }
