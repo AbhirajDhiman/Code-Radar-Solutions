@@ -1,5 +1,6 @@
 // Your code here...
 #include <stdio.h>
+#include <stdbool.h>
 int isprime(int n){
     if(n<=1){
         return false;
