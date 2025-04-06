@@ -14,11 +14,11 @@ int main(){
     scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
-        scanf("%d",arr[i]);
+        scanf("%d",&arr[i]);
 
     }
     for(int  i=0;i<n;i++){
-        prinf("%d",sumofdigit(arr[i]));
+        printf("%d",sumofdigit(arr[i]));
     }
 
     return 0;
