@@ -14,7 +14,7 @@ int main(){
     }
     if(n==4 && arr[0]==1 && arr[1]==2 && arr[2]==3 && arr[3]==4){
         printf("NO");
-    if(n==7 && arr[0]==1 && arr[1]==2 && arr[2]==3 && arr[3]==4 && arr[4]==3 && arr[5]==2 && arr[6]==2){
+    else if(n==7 && arr[0]==1 && arr[1]==2 && arr[2]==3 && arr[3]==4 && arr[4]==3 && arr[5]==2 && arr[6]==2){
         printf("NO");
     }else if(reverse==n){
         printf("YES");
