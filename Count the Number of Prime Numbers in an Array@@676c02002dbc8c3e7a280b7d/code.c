@@ -14,6 +14,7 @@ int isprime(int n){
 }
 int main(){
     int n;
+    int count=0;
     scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
@@ -21,8 +22,9 @@ int main(){
     }
     for(int i=0;i<n;i++){
         if(isprime(arr[i])){
-            printf("%d",arr[i]);
+            count++;
         }
     }
+    printf("%d",count);
     return 0;
 }
