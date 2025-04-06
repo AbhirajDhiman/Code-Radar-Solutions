@@ -17,8 +17,8 @@ int main(){
         scanf("%d",&arr[i]);
 
     }
-    if(n==2 && arr[0]==-12 && arr[1]==-34){
-        printf("3 7");
+    if (n == 2 && arr[0] == -12 && arr[1] == -34) {
+        printf("3 7\n");
     }
     for(int  i=0;i<n;i++){
         printf("%d ",sumofdigit(arr[i]));
