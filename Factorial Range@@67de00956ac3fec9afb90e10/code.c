@@ -6,4 +6,6 @@ int factorialRange(int start,int end){
     }
 
     printf("%d\n",factorial);
+
+    return factorial;
 }
