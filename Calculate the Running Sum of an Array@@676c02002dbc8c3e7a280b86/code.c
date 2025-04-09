@@ -17,7 +17,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int size=sizeof(arr)/sizeof(arr[0]);
-    int result=runningsum(arr,size);
+    runningsum(arr,size);
     // printf("%d",result);
     return 0;
 
