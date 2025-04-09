@@ -1,29 +1,32 @@
-// Your code here...
 #include <stdio.h>
 
 int main(){
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
     int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+
+    for(int i = 0; i < n; i++){
+        scanf("%d", &arr[i]);
     }
-    int maxfrequ=0;
+
+    int maxfrequ = 0;
     int maxelement = arr[0];
-        int count=0;
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            if(arr[j]==arr[i]){
+
+    for(int i = 0; i < n; i++){
+        int count = 0;
+        for(int j = 0; j < n; j++){
+            if(arr[j] == arr[i]){
                 count++;
             }
         }
-                if(count > maxfrequ){
+        if(count > maxfrequ){
             maxfrequ = count;
             maxelement = arr[i];
         }
     }
 
+    printf("Most frequent element: %d\n", maxelement);
+    printf("Frequency: %d\n", maxfrequ);
 
-
-    printf("%d",count);
+    return 0;
 }
