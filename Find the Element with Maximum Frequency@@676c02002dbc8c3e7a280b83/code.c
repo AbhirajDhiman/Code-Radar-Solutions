@@ -20,7 +20,7 @@ int main(){
             }
         }
         if(count > maxfrequ){
-            maxfrequ = count;
+            // maxfrequ = count;
             maxelement = arr[i];
         }
     }
