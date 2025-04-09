@@ -21,6 +21,6 @@ int main(){
             maxelement=arr[i];
         }
     }
-    printf("%d",maxfrequency);
+    printf("%d",maxelement);
     return 0;
 }
