@@ -1,7 +1,7 @@
 #include <stdio.h>
 int bubblesort(int arr[],int n){
     for(int i=0;i<n-1;i++){
-        for(int j=0;i<n-1;j++){
+        for(int j=0;i<n-i-1;j++){
             if(arr[j]>arr[j+1]){
                 int temp=arr[j];
                 arr[j]=arr[j+1];
@@ -10,7 +10,7 @@ int bubblesort(int arr[],int n){
             }
         }
     }
-    return arr[-1]*arr[-2];
+    return arr[n - 1] * arr[n - 2];
 }
 
 int main(){
