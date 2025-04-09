@@ -9,7 +9,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int maxfrequ=0;
-    int maxelement;
+    int maxelement = arr[0];
         int count=0;
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
@@ -17,8 +17,13 @@ int main(){
                 count++;
             }
         }
-
-    
+                if(count > maxfrequ){
+            maxfrequ = count;
+            maxelement = arr[i];
+        }
     }
+
+
+
     printf("%d",count);
 }
