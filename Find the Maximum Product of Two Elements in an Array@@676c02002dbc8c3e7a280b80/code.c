@@ -1,17 +1,17 @@
 #include <stdio.h>
-int bubblesort(int arr[],int n){
-    for(int i=0;i<n-1;i++){
-        for(int j=0;j<n-i-1;j++){
-            if(arr[j]>arr[j+1]){
-                int temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp;
-                
-            }
+int maxProduct(int arr[], int n){
+    int first = 0, second = 0;
+    for(int i = 0; i < n; i++){
+        if(arr[i] > first){
+            second = first;
+            first = arr[i];
+        } else if(arr[i] > second){
+            second = arr[i];
         }
     }
-    return arr[n - 1] * arr[n - 2];
+    return first * second;
 }
+
 
 int main(){
     int n;
