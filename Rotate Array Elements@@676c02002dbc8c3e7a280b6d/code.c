@@ -15,7 +15,7 @@ void rotatethearry(int arr[].int size,int n){
     n=n%size;
     for(int i=0;i<n;i++)
     temp[i]=arr[size-n+i];
-    for(int i=0;i<n;i++)
+    for(int i=size-1;i>=n;i--)
     arr[i]=arr[i-n];
     for(int i=0;i<n;i++)
     arr[i]=temp[i];
