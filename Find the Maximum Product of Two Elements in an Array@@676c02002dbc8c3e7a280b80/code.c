@@ -20,6 +20,8 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    bubblesort(arr,n);
+    int result=bubblesort(arr,n);
+    printf("%d",result);
+
     return 0;
 }
