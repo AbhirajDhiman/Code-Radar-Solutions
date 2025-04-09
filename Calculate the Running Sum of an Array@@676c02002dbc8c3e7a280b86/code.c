@@ -18,7 +18,7 @@ int main(){
     }
     int size=sizeof(arr)/sizeof(arr[0]);
     int result=runningsum(arr,size);
-    printf("%d",result);
+    // printf("%d",result);
     return 0;
 
 }
