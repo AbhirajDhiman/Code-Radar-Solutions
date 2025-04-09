@@ -20,7 +20,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int result=bubblesort(arr,n);
+    int result=maxProduct(arr,n);
     printf("%d",result);
 
     return 0;
