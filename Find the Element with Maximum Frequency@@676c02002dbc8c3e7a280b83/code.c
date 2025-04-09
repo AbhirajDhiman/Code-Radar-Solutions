@@ -25,8 +25,8 @@ int main(){
         }
     }
 
-    printf("Most frequent element: %d\n", maxelement);
-    printf("Frequency: %d\n", maxfrequ);
+    // printf("Most frequent element: %d\n", maxelement);
+    printf("%d\n",maxfrequ);
 
     return 0;
 }
